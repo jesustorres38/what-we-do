@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Roboto:400,900&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
+  font-size: 13px;
+  color: #262627;
+}
+
+.menu {
+  position: fixed;
+}
+
+.menu__button {
+  width: 65px;
+  height: 65px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tags {
+  padding: 30px 20px 10px;
+}
+
+.tags::before, .tags::after {
+  content: '';
+  height: 250px;
+  display: block;
+}
+
+.tags__title {
+  font-weight: 900;
+  font-size: 3em;
+  padding: 0 0 20px;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+
+.tags__text {
+  font-family: "Merriweather", sans-serif, Arial, Helvetica;
+  font-size: 2em;
+  line-height: 1.33em;
+}
+
+.tags__wrapper {
+  padding: 20px 0 0;
+}
+
+.tags__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tags__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-right: 28px;
+  text-decoration: none;
+}
+
+.tags__item .tags__item--icon {
+  width: 70px;
+  height: 70px;
+  margin-left: -.2em;
+  margin-right: .5em;
+  color: white;
+  -webkit-transition: margin 0.2s ease;
+  transition: margin 0.2s ease;
+}
+
+.tags__item [class*='text'] {
+  font-size: 1.38em;
+  font-weight: 900;
+  padding-left: 15px;
+  -webkit-transition: color 0.2s ease, margin 0.2s ease;
+  transition: color 0.2s ease, margin 0.2s ease;
+}
+
+.tags__item:hover .tags__item--icon {
+  margin-left: -.5em;
+  margin-right: .5em;
+}
+
+.tags__item:hover [class*='text'] {
+  color: black;
+  margin-left: -.5em;
+}
+
+.tags__item .fas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .tags {
+    width: 750px;
+    margin: 0 auto;
+  }
+  .tags__title {
+    font-size: 5em;
+    padding: 0 0 40px;
+  }
+  .tags__wrapper {
+    padding: 30px 0 0;
+  }
+  .tags__list:nth-child(2n) {
+    margin-left: -24px;
+  }
+  .tags__item {
+    width: auto;
+  }
+  .tags__item .tags__item--icon {
+    width: 80px;
+    height: 80px;
+  }
+  .tags__item [class*='text'] {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  .tags {
+    width: 970px;
+  }
+  .tags__wrapper {
+    padding: 30px 0 0 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tags {
+    width: 1170px;
+  }
+  .tags__item {
+    padding-right: 60px;
+  }
+  .tags__item .tags__item--icon {
+    margin-right: .8em;
+  }
+  .tags__item [class*='text'] {
+    padding-left: 38px;
+  }
+}
+
+.tags__item--text--ux {
+  color: #FF4F81;
+}
+
+.tags__item--text--frontend {
+  color: #8E44E7;
+}
+
+.tags__item--text--sem {
+  color: #E74444;
+}
+
+.tags__item--text--manager {
+  color: #FFC168;
+}
+
+.tags__item--text--bi {
+  color: #1BC7D0;
+}
+
+.tags__item--text--social {
+  color: #04AEFF;
+}
+
+.tags__item--text--finance {
+  color: #B84692;
+}
+
+.tags__item--text--backend {
+  color: #2CDE97;
+}
+
+.tags__item--text--customer {
+  color: #3369E7;
+}
+
+.tags__item--text--seo {
+  color: #FF6C5E;
+}
+
+.tags__item--text--content {
+  color: #0060B4;
+}
+
+.tags__item--text--qa {
+  color: #8687E9;
+}
+
+.tags__item--text--sysadmin {
+  color: #F99F61;
+}
+
+.tags__item--text--hr {
+  color: #85D0E9;
+}
+
+.tags__item--ux {
+  background-color: #FF4F81;
+}
+
+.tags__item--frontend {
+  background-color: #8E44E7;
+}
+
+.tags__item--sem {
+  background-color: #E74444;
+}
+
+.tags__item--manager {
+  background-color: #FFC168;
+}
+
+.tags__item--bi {
+  background-color: #1BC7D0;
+}
+
+.tags__item--social {
+  background-color: #04AEFF;
+}
+
+.tags__item--finance {
+  background-color: #B84692;
+}
+
+.tags__item--backend {
+  background-color: #2CDE97;
+}
+
+.tags__item--customer {
+  background-color: #3369E7;
+}
+
+.tags__item--seo {
+  background-color: #FF6C5E;
+}
+
+.tags__item--content {
+  background-color: #0060B4;
+}
+
+.tags__item--qa {
+  background-color: #8687E9;
+}
+
+.tags__item--sysadmin {
+  background-color: #F99F61;
+}
+
+.tags__item--hr {
+  background-color: #85D0E9;
+}
